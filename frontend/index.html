@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LaundryDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>LaundryDesk</h1>
+  <p>Order Management Dashboard</p>
+</header>
+
+<div class="filters">
+  <input type="text" id="searchName" placeholder="Search by name" />
+  <select id="statusFilter">
+    <option value="">All Status</option>
+    <option value="RECEIVED">Received</option>
+    <option value="PROCESSING">Processing</option>
+    <option value="READY">Ready</option>
+    <option value="DELIVERED">Delivered</option>
+  </select>
+  <button onclick="applyFilters()">Search</button>
+</div>
+
+<h2>Create Order</h2>
+<form id="orderForm">
+  <input type="text" id="name" placeholder="Customer Name" required />
+  <input type="text" id="phone" placeholder="Phone" required maxlength="10" />
+
+  <div id="garments">
+    <input type="text" placeholder="Type" class="type" />
+    <input type="number" placeholder="Qty" class="qty" />
+    <input type="number" placeholder="Price" class="price" />
+  </div>
+
+  <button type="submit">Create Order</button>
+</form>
+
+<h2>Orders Board</h2>
+<div class="board">
+  <div class="column" id="RECEIVED"><h3>Received</h3></div>
+  <div class="column" id="PROCESSING"><h3>Processing</h3></div>
+  <div class="column" id="READY"><h3>Ready</h3></div>
+  <div class="column" id="DELIVERED"><h3>Delivered</h3></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

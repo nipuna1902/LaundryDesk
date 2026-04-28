@@ -1,4 +1,4 @@
-const API = "https://laundrydesk-backend.onrender.com/api";
+const API = "https://laundrydesk-backend1.onrender.com/api";
 
 const priceMap = {
   Shirt: 50,

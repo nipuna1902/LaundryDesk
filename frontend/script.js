@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://laundrydesk-backend.onrender.com/api";
 
 const priceMap = {
   Shirt: 50,

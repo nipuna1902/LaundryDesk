@@ -12,7 +12,6 @@ This project was built using an **AI-first approach**, where AI tools were used 
 
 ```bash
 git clone https://github.com/<your-username>/laundrydesk.git
-cd laundrydesk
 ```
 
 ### 2. Backend Setup
